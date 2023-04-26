@@ -1,8 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
 const  cors = require('cors');
-const  hash = require('js-sha512');
 
 const app=express();
 app.use(cors());
@@ -22,9 +20,6 @@ var corsOptions = {
   optionsSuccessStatus: 200
 };
 app.options('/signup', cors());
-
-
-
 
 //app listening port number
 app.listen(process.env.PORT || 3001, function(){

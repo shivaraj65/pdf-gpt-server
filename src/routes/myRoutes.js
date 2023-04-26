@@ -10,9 +10,7 @@ const router = Router();
 router.post('/signup', controller.signup);
 
 router.get('/test', async(req,res)=>{
-    
     console.log("called test");
-
     res.send({status:'success',message:'user added!'});
 });
 
